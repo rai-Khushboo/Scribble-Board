@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title>ScribbleBoard</title>
+</head>
+<body>
+    <div class="main w-full min-h-screen bg-slate-900">
+        <div class="text-center text-5xl font-bold text-white pt-12 pb-6">
+            <span class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
+                ScribbleBoard
+            </span>
+        </div>
+
+        <div class="form text-white max-w-4xl mx-auto px-6 py-8 bg-slate-800 rounded-xl shadow-xl">
+            <form action="/create" method="post">
+                <input class="block w-full mb-4 rounded-md outline-none px-5 py-3 bg-slate-700 placeholder-gray-400 focus:ring-2 focus:ring-indigo-500"
+                       type="text" placeholder="Title goes here" name="title" required>
+                <textarea class="block w-full rounded-md mb-6 outline-none px-5 py-3 bg-slate-700 placeholder-gray-400 resize-none focus:ring-2 focus:ring-indigo-500"
+                          placeholder="Write your task details" name="details" required></textarea>
+                <input class="w-full bg-gradient-to-r from-indigo-500 to-purple-500 px-5 py-3 rounded-md font-semibold text-white hover:brightness-110 transition cursor-pointer"
+                       type="submit" value="Create Task">
+            </form>
+        </div>
+
+        <!-- Task Cards -->
+        <div class="tasks max-w-6xl mx-auto px-6 pt-10 flex flex-wrap gap-6 justify-center">
+            <% if (files.length > 0) { %>
+                <% files.forEach(function(val) { %>
+                    <div class="task w-72 px-5 py-4 rounded-lg bg-slate-800 shadow-lg hover:scale-105 transition">
+                        <div class="flex justify-between items-center">
+                            <!-- File Name with Edit Icon -->
+                            <h1 class="text-white text-2xl font-semibold truncate flex items-center">
+                                <%= val %>
+                                <a href="/edit/<%= val %>" class="ml-2 text-indigo-400 hover:text-indigo-300">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                            </h1>
+                        </div>
+                        
+                        <div class="flex justify-between items-center mt-4">
+                            <a class="text-indigo-400 hover:text-indigo-300" href="/file/<%= val %>">Read More</a>
+                            <form action="/delete/<%= val %>" method="post" class="inline-block">
+                                <button type="submit" class="text-indigo-500 hover:text-red-400">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                <% }) %>
+            <% } else { %>
+                <h3 class="text-gray-400 text-center w-full mt-10">No tasks yet</h3>
+            <% } %>
+        </div>
+    </div>
+</body>
+</html>
