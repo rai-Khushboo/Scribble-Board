@@ -1,0 +1,5 @@
+This task involves completing a React project assignment, which includes creating a fully functional to-do list application. The project must include features such as adding, editing, and deleting tasks, marking tasks as completed, and filtering tasks by status (all, completed, or pending). 
+
+The app should be built using React, with state management handled by React's `useState` and `useEffect` hooks. Additionally, use React Router for routing between pages and implement proper form validation for adding new tasks. The project should be styled using Tailwind CSS for a clean and responsive user interface.
+
+Ensure the code is well-documented and follows best practices for React development. A detailed README should be included to explain how to run the application and the technologies used.

@@ -1,0 +1,9 @@
+This task involves preparing for a technical interview with Google. The preparation includes studying data structures and algorithms, reviewing common coding interview questions, and practicing on platforms like LeetCode and HackerRank.
+
+Tasks to be done:
+1. Revise key algorithms: sorting, searching, dynamic programming.
+2. Solve at least 10 problems on LeetCode (easy to medium difficulty).
+3. Review Google interview-specific questions and solutions.
+4. Prepare behavioral interview questions and practice answering them.
+
+The goal is to feel confident and prepared for the interview within a week. 
