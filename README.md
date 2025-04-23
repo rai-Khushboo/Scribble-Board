@@ -27,7 +27,10 @@
 - **JavaScript**: Used to create interactive and dynamic functionality.
 
 ---
+![image](https://github.com/user-attachments/assets/4c8750ce-cf3f-4060-bac7-1df0508de57f)
+
+![image](https://github.com/user-attachments/assets/77d31d2d-c140-4f6d-bb19-ed21f67e0e21)
 
 ## 🧑‍💻 **Author**
 
-**Khushboo Kumari**  
+**Made with 💻 and ❤️ by Khushboo Kumari**  
