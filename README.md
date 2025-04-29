@@ -26,6 +26,27 @@
 - **File System (fs)**: For managing file-based tasks (creating, reading, deleting, renaming tasks).
 - **JavaScript**: Used to create interactive and dynamic functionality.
 
+## 🚀 Getting Started
+
+### 📦 Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/your-username/scribbleboard.git
+   cd scribbleboard
+**2.Install the dependencies:**
+  >npm install
+
+  >npm install express ejs
+    
+**💻 Running Locally**
+
+    node index.js
+**Visit the application in your browser:**
+
+    http://localhost:3000
+
 ---
 ![image](https://github.com/user-attachments/assets/4c8750ce-cf3f-4060-bac7-1df0508de57f)
 
